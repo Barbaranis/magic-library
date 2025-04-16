@@ -1,0 +1,95 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to bottom right, #f9f5f0, #e7d9c6);
+    color: #3a2f24;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding-bottom: 80px;
+  }
+
+
+  /* Paiement Section */
+  .paiement {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .paiement h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #5e4033;
+  }
+  
+  .paiement h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #7c563c;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #d6c7b4;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fdfaf6;
+  }
+  
+  .paiement-flex {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .paiement-flex input {
+    flex: 1;
+  }
+  
+  /* Bouton */
+  .payer-btn {
+    background-color: #caa66b;
+    color: white;
+    font-size: 1rem;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .payer-btn:hover {
+    background-color: #a8874a;
+  }
+  
+  /* Confirmation */
+  .confirmation {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fffbea;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin-top: 30px;
+  }
+  
+  .confirmation h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #5e4033;
+  }
+  
+ 

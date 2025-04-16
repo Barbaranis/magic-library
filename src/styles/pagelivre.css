@@ -1,0 +1,322 @@
+
+/*RETOUR*/
+.retour-accueil {
+    display: inline-block;
+    margin: 90px -250px 0 0px; /* espace haut et décalé à gauche */
+    padding: 8px 16px;
+    background-color: #3a2f24;
+    
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  .retour-accueil:hover {
+    background-color: #5e4033;
+  }
+  
+  
+
+
+
+
+
+
+
+/*Livres*/
+
+
+.page-livre {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .page-livre img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  }
+  
+  .page-livre h1 {
+    font-size: 2rem;
+    color: #5e4033;
+    margin-bottom: 10px;
+  }
+  
+  .page-livre p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #3a2f24;
+    margin-bottom: 20px;
+  }
+  
+
+/*Description*/
+
+
+/* Longue description */
+.long-description {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #fdf9f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    color: #3a2f24;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-height: 400px;
+    overflow-y: auto;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 5%;
+  }
+  
+  /* Scroll personnalisé (facultatif, mais joli) */
+  .long-description::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .long-description::-webkit-scrollbar-track {
+    background: #f5f1e8;
+    border-radius: 10px;
+  }
+  
+  .long-description::-webkit-scrollbar-thumb {
+    background: #caa66b;
+    border-radius: 10px;
+  }
+  
+  .long-description::-webkit-scrollbar-thumb:hover {
+    background: #a8874a;
+  }
+  
+  
+
+
+
+
+
+
+
+
+/*Ajout panier*/
+
+
+  #ajouter-panier {
+    padding: 12px 24px;
+    background-color: #caa66b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  #ajouter-panier:hover {
+    background-color: #a8874a;
+  }
+  
+  
+
+
+
+
+
+
+  .commentaires-section {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #fdf7ef;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  
+  .commentaires-section h2 {
+    color: #5e4033;
+    margin-bottom: 15px;
+  }
+  
+  
+  .champ-avis {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  
+  .message-connexion {
+    color: #a13333;
+    font-weight: bold;
+  }
+  
+  
+  .btn-envoyer {
+    padding: 10px 20px;
+    background-color: #caa66b;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  
+  .btn-envoyer:hover {
+    background-color: #a8874a;
+  }
+  
+  
+  .avis-existants {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  
+  .avis-carte {
+    padding: 15px;
+    background-color: #fff9f2;
+    border-left: 5px solid #caa66b;
+    margin-bottom: 12px;
+    border-radius: 6px;
+  }
+  
+  
+  .avis-carte span {
+    display: block;
+    margin-top: 5px;
+    color: #3a2f24;
+    font-size: 0.9rem;
+  }
+  
+  
+
+
+
+
+
+
+
+
+  
+  /* Footer */
+  footer {
+    background-color: #3a2f24;
+ 
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 40px;
+  }
+  
+  
+  footer h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  
+  footer input[type="email"] {
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  
+  footer button {
+    padding: 8px 12px;
+    background-color: #caa66b;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 28%;
+  }
+  
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  footer ul li {
+    margin-bottom: 6px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  
+  footer a:hover {
+    color: #caa66b;
+    text-decoration: underline;
+  }
+  
+  
+  .reseaux-list,
+  .tags-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+
+
+  .tags-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .tags-list li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .tags-list li a:hover {
+    color: #caa66b;
+    text-decoration: underline;
+  }
+  
+  
+
+
+  
+  .reseaux-list li,
+  .tags-list li {
+    margin-bottom: 6px;
+  }
+  
+  
+  footer button:hover {
+    background-color: #a8844d;
+    transition: background-color 0.3s ease;
+  }
+  
+  

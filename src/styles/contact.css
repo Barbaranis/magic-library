@@ -1,0 +1,156 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #f5f0e6, #e9dccc);
+  color: #3a2f24;
+  min-height: 100vh;
+  line-height: 1.6; /* Améliore la lisibilité */
+}
+
+/* Contact Section */
+.contact-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fffdf7;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+  font-size: 2.2rem;
+  color: #70635e;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-section .intro {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #d4ae99;
+}
+
+/* Formulaire */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Augmente l’espacement pour la clarté */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Espacement entre label et input */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 2px solid #d6c4a4; /* Bordure plus épaisse pour visibilité */
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f9f5ef;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #5e4033; /* Couleur visible au focus */
+  box-shadow: 0 0 5px rgba(94, 64, 51, 0.5); /* Indicateur clair pour clavier */
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #caa66b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, outline 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #a8824d;
+}
+
+.contact-form button:focus {
+  outline: 3px solid #5e4033; /* Focus visible pour clavier */
+  outline-offset: 2px;
+}
+
+/* Erreurs */
+.error {
+  color: #a83232;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Carte magique */
+.magical-map {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.magical-map h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #99908c;
+}
+
+.magical-map img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+/* Contraste et navigation au clavier */
+a:focus {
+  outline: 3px solid #5e4033;
+  outline-offset: 2px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .contact-section {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .contact-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px; /* Réduit pour petits écrans mais reste lisible */
+  }
+}
+
+/* Amélioration pour lecteurs d’écran */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+

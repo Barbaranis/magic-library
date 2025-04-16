@@ -1,0 +1,547 @@
+/* Header */
+header {
+  background-color: #3a2f24;
+  color: white;
+  padding: 29px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+ 
+}
+
+
+/* Conteneur principal pour le contenu du header */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+
+
+/* Conteneur pour le logo et les icônes/menu burger */
+.header-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+
+.logo img {
+  height: 90px;
+  width: 70px;
+  transition: transform 0.3s ease;
+  border-radius: 20%;
+opacity: 70%;
+ 
+}
+
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+
+
+.search-form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+}
+
+
+
+.search-bar {
+  width: 100%;
+  max-width: 100%;
+  min-width: 250px;
+  padding: 10px;
+}
+
+
+
+.search-bar:focus {
+  outline: none;
+  border-color: #caa66b;
+  box-shadow: 0 0 5px rgba(202, 166, 107, 0.3);
+}
+
+
+
+input[type="text"], input[type="email"] {
+  width: 89%;}
+
+
+
+
+.header-icons {
+  display: flex;
+  gap: 40px;
+  font-size: 14px;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+
+.header-icons a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 19px;
+ 
+}
+
+
+.header-icons a:hover {
+  transform: scale(1.2);
+}
+
+
+.header-icons a:focus {
+  outline: 2px solid #caa66b;
+  outline-offset: 2px;
+}
+
+
+/* Style pour le texte sous les icônes */
+.header-icons .icon-label {
+  font-size: 10px;
+  color: white;
+  transition: color 0.3s ease;
+  
+}
+
+
+/* Style pour les icônes spécifiques */
+.header-icons .heart {
+  color: #f30f0f;
+  transition: color 0.3s ease;
+}
+
+
+.header-icons .heart:hover,
+.header-icons .heart.active {
+  color: #b760899a;
+}
+
+
+.header-icons .panier {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+
+.header-icons .panier:hover,
+.header-icons .panier.active {
+  color: #caa66b;
+}
+
+
+.header-icons .compte {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+
+.header-icons .compte:hover,
+.header-icons .compte.active {
+  color: #caa66b;
+}
+
+
+/* Hover continu aussi pour les icônes et le texte */
+.header-icons a:hover .icon-label,
+.header-icons a.active .icon-label {
+  color: #caa66b;
+}
+
+
+/* Style pour le wrapper du panier (icône + badge) */
+.cart-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+/* Style pour le badge du compteur */
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #caa66b;
+  color: #3a2f24;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: bold;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* --- Menu Burger --- */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  z-index: 1001;
+}
+
+
+.menu-toggle span {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+
+.menu-toggle:focus {
+  outline: 2px solid #caa66b;
+  outline-offset: 2px;
+}
+
+
+/* Transformation en croix quand le menu est ouvert */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+
+/* --- Navigation (Desktop) --- */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 0px 19px 0px 35px;
+  margin-bottom: -1%;
+  transition: color 0.2s ease;
+  
+}
+
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #caa66b;
+}
+
+
+.nav-menu a:focus {
+  outline: 2px solid #caa66b;
+  outline-offset: 2px;
+}
+
+
+
+
+
+
+
+
+/* --- RESPONSIVE --- */
+/* TABLETTE et PETIT ÉCRAN */
+@media screen and (max-width: 991px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search-form {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .header-icons {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .nav-menu.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+/* SMARTPHONE */
+@media screen and (max-width: 500px) {
+  .logo img {
+    height: 50px;
+  }
+  .search-bar {
+    font-size: 13px;
+    padding: 8px;
+    max-width: 100%;
+  }
+  .header-icons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .user-prenom {
+    font-size: 13px;
+  }
+  .logout-btn {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Format Desktop --- */
+@media (min-width: 769px) {
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Rétablir space-between pour le desktop */
+    gap: 0; /* Supprimer le gap en desktop pour un contrôle précis */
+  }
+
+
+  .header-top {
+    display: contents; /* Permet aux enfants de header-top d'être traités comme des enfants directs de header-content */
+  }
+
+
+  .logo {
+    order: 1;
+  }
+
+
+  .search-bar {
+    order: 2;
+    margin: 0 20px; /* Rétablir les marges pour le desktop */
+  }
+
+
+  .header-icons {
+    order: 3;
+  }
+}
+
+
+/* --- Responsive (media query à 768px) --- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #fdf9fd;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 70px 20px 20px 20px;
+    transition: right 0.3s ease;
+    z-index: 999;
+  }
+
+
+  .nav-menu.show {
+    right: 0;
+    background-color: #caa66b;
+  }
+
+
+  .nav-menu a {
+    color: #79044c;
+    font-size: 20px;
+  }
+
+
+  .nav-menu a:hover,
+  .nav-menu a.active {
+    color: #fdf9fd;
+  }
+
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; /* Supprimer l'espace vide à droite */
+    gap: 10px; /* Ajuster l'espacement entre les éléments */
+  }
+
+
+  .header-top {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+
+  .search-bar {
+    width: 100%;
+    margin: 0; /* Supprimer les marges pour un contrôle via gap */
+  }
+
+
+  .header-icons {
+    justify-content: flex-end;
+  }
+
+
+  .header-icons a:hover .icon-label,
+  .header-icons a.active .icon-label {
+    color: #fdf9fd;
+  }
+}
+
+
+/* --- Media query à 391px --- */
+@media (max-width: 391px) {
+  .header {
+    padding: 10px;
+  }
+
+
+  .header-content {
+    flex-direction: column;
+    justify-content: flex-start; /* Supprimer l'espace vide à droite */
+    gap: 10px; /* Ajuster l'espacement entre les éléments */
+  }
+
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+
+  .header-icons {
+    display: flex;
+    width: auto;
+    font-size: 16px;
+    gap: 8px;
+    padding-right: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+  .menu-toggle {
+    display: flex;
+    order: 1;
+  }
+
+
+  .search-bar {
+    width: 100%;
+    margin: 0; /* Supprimer les marges pour un contrôle via gap */
+    padding: 8px;
+    font-size: 12px;
+    max-width: none;
+  }
+
+
+  .logo img {
+    height: 40px;
+  }
+
+
+  .header-icons .heart {
+    color: #d32f2f;
+  }
+
+
+  .header-icons .heart:hover,
+  .header-icons .heart.active {
+    color: #f44336;
+  }
+
+
+  .header-icons .panier {
+    color: #000;
+  }
+
+
+  .header-icons .panier:hover,
+  .header-icons .panier.active {
+    color: #caa66b;
+  }
+
+
+  .header-icons .compte {
+    color: #000;
+  }
+
+
+  .header-icons .compte:hover,
+  .header-icons .compte.active {
+    color: #caa66b;
+  }
+
+
+  .header-icons .icon-label {
+    font-size: 8px;
+    margin-top: 2px;
+  }
+
+
+  .cart-badge {
+    top: -6px;
+    right: -6px;
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+  }
+}

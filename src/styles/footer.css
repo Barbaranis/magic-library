@@ -1,0 +1,126 @@
+footer {
+    background-color: #3a2f24;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 40px;
+    
+  }
+  
+  
+  footer h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  
+  footer input[type="email"] {
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  
+  footer button {
+    padding: 8px 12px;
+    background-color: #caa66b;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 28%;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  footer button:hover {
+    background-color: #a8844d;
+  }
+  
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  footer ul li {
+    margin-bottom: 6px;
+  }
+  
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  
+  footer a:hover {
+    color: #caa66b;
+    text-decoration: underline;
+  }
+  
+  
+  .reseaux-list,
+  .tags-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  .tags-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px 20px;
+    margin: 0;
+  }
+  
+  
+  .tags-list li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .tags-list li a:hover {
+    color: #caa66b;
+  }
+  
+  
+  .reseaux-list li,
+  .tags-list li {
+    margin-bottom: 6px;
+  }
+  
+  
+  /* Responsive Footer */
+  @media (max-width: 768px) {
+    footer {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 30px 20px;
+    }
+  
+  
+    footer h4 {
+      font-size: 16px;
+    }
+  
+  
+    footer input[type="email"],
+    footer button {
+      font-size: 14px;
+    }
+  
+  
+    .tags-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

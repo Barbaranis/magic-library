@@ -1,0 +1,45 @@
+/* === A propos Page - Magic Library === */
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f9f5f0;
+    color: #2e2e2e;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  
+ 
+  
+  /* Sections */
+  main {
+    padding: 40px 20px;
+  }
+  
+  .apropos-section {
+    background-color: #fff;
+    padding: 30px 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .apropos-section h2 {
+    color: #5e4033;
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  
+  .apropos-section p {
+    font-size: 16px;
+    color: #3d2b1f;
+  }
+  
+ 
+  
